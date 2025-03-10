@@ -16,12 +16,17 @@ import "fmt"
 const a = 10
 
 func main() {
-	//declarando multiplas variaves
+	// declaring multiple variables
 	var d, m, e, f = 4, 5, 6, 7
-	//variaveis, seus valores podem ser alterado
-	//const nao se pode alterar o valor
-
-	fmt.Printf("2 + %v", 2+a)
-	// \n serve para quebrar a linha
-	fmt.Printf("valor de d= %v\n, valor de m= %v \n,valor de e= %v \n, valor de f= %v \n", d, m, e, f)
+	// variables, their values can be changed
+	// constants cannot be changed
+	// another way to use var
+	var (
+		u = 2
+		l = 1
+	)
+	fmt.Printf("u + l = %v + %v = %v\n", u, l, u+l)
+	fmt.Printf("2 + %v = %v\n", 2+a, 2+a)
+	// \n is used to break the line
+	fmt.Printf("valor de d= %v\nvalor de m= %v\nvalor de e= %v\nvalor de f= %v\n", d, m, e, f)
 }
